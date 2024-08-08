@@ -7,10 +7,11 @@
     <title>Aebbys Eyes</title>
 </head>
 <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/videos/Sequence 01_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="wrapper">
-        <video autoplay muted loop id="bg-video">
-            <source src="assets/videos/Sequence 01_1.mp4" type="video/mp4">
-        </video>
         <a href="/" class="top-logo">
             <svg preserveAspectRatio="none" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
                 <g>
@@ -18,25 +19,30 @@
                 </g>
             </svg>
         </a>
-        <div class="nav-bar">
-            <span>About Me</span>
-            <span>Portfolio</span>
+
+        <div class="nav-bar serif">
+            <a class="no-decoration portfolio" href=""><span>Portfolio</span></a>
         </div>
-        <div class="headline">
+
+        <div class="headline serif">
             <h1>Willkommen bei Aebbys Eyes</h1>
         </div>
-        <div class="hero">
+
+        <div class="hero main-font">
             <div class="content">
-                <h2>About Me</h2>
-                <h3>Abigail Cozo</h3>
+                <h2 class="hero-hl">About Me</h2>
+                <h3 class="hero-name">Abigail Cozo</h3>
                 <p class="profile-desc">
                     Aktuell Studentin im Studiengang <strong>Media: Conception & Production (B.A.)</strong> an der Hochschule RheinMain in Wiesbaden.
                 </p>
-                <img class="linkedin" src="" alt="linkedIn-Icon">
-                <img class="instagramm" src="" alt="Instagramm-Icon">
+                <div class="hero-socials">
+                    <img class="linkedin" src="" alt="linkedIn-Icon">
+                    <img class="instagramm" src="" alt="Instagramm-Icon">
+                </div>
             </div>
             <img src="" alt="Portrait von Abby" class="portrait">
         </div>
+
     </div>
 </body>
 </html>
