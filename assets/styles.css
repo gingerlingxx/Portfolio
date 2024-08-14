@@ -143,10 +143,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0;
+}
+
+.hero-portfolio .content {
+    margin-bottom: 5rem;
 }
 
 .portfolio-hl {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .portfolio-desc {
@@ -161,7 +167,6 @@ h1 {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 3rem;
 }
 
 .thumbnail {
@@ -172,15 +177,15 @@ h1 {
     backface-visibility: hidden;
 }
 
-.photography-wrapper:hover .thumbnail {
+.hover-wrapper:hover .thumbnail {
     filter: brightness(60%);
 }
 
-.photography-wrapper {
+.hover-wrapper {
     position: relative;
 }
 
-.photography-wrapper .photography-text {
+.hover-wrapper .hover-text {
     opacity: 0;
     transition: .5s ease-in-out;
     position: absolute;
@@ -192,13 +197,14 @@ h1 {
     font-size: 2rem;
 }
 
-.photography-wrapper:hover .photography-text {
+.hover-wrapper:hover .hover-text {
     opacity: 1;
 }
 
-.photography-text,
-.photography-text:active,
-.photography-text:link,
-.photography-text:visited {
+.hover-text,
+.hover-text:active,
+.hover-text:link,
+.hover-text:visited {
     color: white;
 }
+
