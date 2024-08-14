@@ -58,10 +58,10 @@ a.portfolio {
     transition: color .6s ease 0s;
 }
 
-a.portfolio, 
-a.portfolio:link, 
-a.portfolio:active, 
-a.portfolio:visited {
+.no-link-colors,
+.no-link-colors:link,
+.no-link-colors:active,
+.no-link-colors:visited {
     color: black;
 }
 
@@ -82,6 +82,7 @@ h1 {
     background-color: white;
     display: flex;
     margin-bottom: 3rem;
+    justify-content: space-between;
 }
 
 .hero .content  {
@@ -93,7 +94,8 @@ h1 {
     gap: 1rem;
 }
 
-.hero-hl {
+.hero-hl,
+.portfolio-hl {
     font-weight: 600;
     font-size: 3rem;
 }
@@ -131,4 +133,72 @@ h1 {
 
 .linkedin {
     margin-right: 1rem;
+}
+
+/* Portfolio page */
+.hero-portfolio {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-hl {
+    text-align: center;
+}
+
+.portfolio-desc {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.preview-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.thumbnail {
+    width: 581px;
+    height: 581px;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.photography-wrapper:hover .thumbnail {
+    filter: brightness(60%);
+}
+
+.photography-wrapper {
+    position: relative;
+}
+
+.photography-wrapper .photography-text {
+    opacity: 0;
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.photography-wrapper:hover .photography-text {
+    opacity: 1;
+}
+
+.photography-text,
+.photography-text:active,
+.photography-text:link,
+.photography-text:visited {
+    color: white;
 }
